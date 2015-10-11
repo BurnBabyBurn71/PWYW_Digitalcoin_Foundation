@@ -4,6 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/*!
+ * Code edited by BurnBabyBurn71 for non-commercial use
+*/
+
 (function($) {
     "use strict"; // Start of use strict
 
@@ -21,6 +25,8 @@
         target: '.navbar-fixed-top',
         offset: 51
     })
+
+
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -44,5 +50,16 @@
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
+
+    jQuery(window).scroll(function () {
+        var fromTopPx = 100; // distance to trigger
+        var scrolledFromtop = jQuery(window).scrollTop();
+        if (scrolledFromtop > fromTopPx) {
+            jQuery('#test').addClass('scrolled');
+        } else {
+            jQuery('#test').removeClass('scrolled');
+        }
+    });
+
 
 })(jQuery); // End of use strict

@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,7 @@
 </head>
 
 <body id="page-top">
-
+   
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -47,8 +47,9 @@
                     <span class="icon-bar"></span>
 
                 </button>
-
-                <img class="page-scroll"  src="./img/digitalcoin-logo.png" alt="" style="height: 40px; width 40px; margin: 5px;float:left;">
+               
+                <div id="test"></div>
+                <!-- <img class="page-scroll"  src="./img/digitalcoin-logo.png" alt="" style="height: 40px; width 40px; margin: 5px;float:left;">-->
 
                 <a class="navbar-brand page-scroll" style="margin-left: 0px;" href="#page-top">  The Digitalcoin Foundation</a>
             </div>
@@ -63,7 +64,10 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Blog & News</a>
+                        <a class="page-scroll" href="#blognews">News</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#mission">Mission</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -160,48 +164,55 @@
         </div>
     </section>
 
-    <section class="bg-primary" id="portfolio">
+    <section class="bg-primary" id="blognews">
         <div class="container">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">The Latest News</h2>
-                    <hr class="light">
+            <div class="container text-center">
+                <div class="call-to-action">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <i style="color:#fff; margin-bottom:35px;margin-top:-25px;" class="fa fa-5x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h2 class="section-heading">The Latest News</h2>
+                        <hr class="light">
 
-                    <h6> 03/10/15 </h6>
-                    <p style="margin-bottom:50px;" class="text-faded">
-                        The Digitalcoin Foundation has finally been completed, thanks BurnBabyBurn71!
-                    </p>
+                        <p style="margin-bottom:0px;" class="text-faded">
+                        <script type="text/javascript" src="http://feed.informer.com/widgets/OVAFXHQZQA.js"></script>
+                        </p>
 
-                    <h6> 04/10/15 </h6>
-                    <p style="margin-bottom:10px;" class="text-faded">
-                        Blah Blah Blah
-                    </p>
-
-
-
-                     <a style="margin-top:50px;" href="#" class="btn btn-default btn-xl">Click here for more news and Blogs</a>
+                        <!--<a style="margin-top:50px;" href="#" class="btn btn-default btn-xl">Blog coming soon</a>-->
+                    </div>
                 </div>
             </div>
         </div>
-    </aside>
     </section>
 
-    <section id="contact">
+    <section id="mission">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Join Now!</h2>
+                    <i style=" margin-bottom:35px;margin-top:-25px;" class="fa fa-5x fa-flag-o wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <h2 class="section-heading">Mission</h2>
                     <hr class="primary">
-                    <p>Joning the Digitalcoin Foundation is just a matter of contacting us, do so and we can improve the Digitalcoin Project together.</p>
+                    <p>To encourage and support Digitalcoin code developers, business developers, and community of users through material, intellectual, and financial contributions, in order keep the core and network strong, its users informed and educated, and to promote the overall value of Digitalcoin to a wide array of geographically and economically diverse industries, companies, and individuals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary text-faded" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <i style="color:#fff; margin-bottom:35px;margin-top:-25px;" class="fa fa-5x fa-bullhorn wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <h2 style="color:#fff" class="section-heading">Join Now!</h2>
+                    <hr class="primary">
+                    <p style="margin-bottom:15px;">Joning the Digitalcoin Foundation is just a matter of contacting us, do so and we can improve the Digitalcoin Project together.</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
+                    <i style="margin-bottom:15px;" class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p><a href="https://forum.digitalcoin.co/">forum.digitalcoin.co</a></p>
                 </div>
                 <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <i style="margin-bottom:15px;" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:admin@digitalcoin.org">admin@digitalcoin.org</a></p>
                 </div>
             </div>
         </div>
@@ -221,6 +232,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 
+    
 </body>
 
 </html>
+

@@ -4,6 +4,22 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+#test{
+    background: url('./digitalcoin-logo-white.png');
+    height: 40px; 
+    width: 40px; 
+    margin: 5px;
+    float:left;
+}
+
+#test.scrolled{
+    background: url('./digitalcoin-logo.png');
+    height: 40px; 
+    width: 40px; 
+    margin: 5px;
+    float:left;
+}
+
 html,
 body {
     width: 100%;
@@ -62,6 +78,22 @@ p {
 
 .text-faded {
     color: rgba(255,255,255,.7);
+}
+
+.text-faded a:link{
+    color: rgba(255,255,255,.9);
+}
+
+.text-faded a:visited{
+    color: rgba(255,255,255,.9);
+}
+
+.text-faded a:hover {
+    color: rgba(255,255,255,.9);
+}
+
+.text-faded a:active {
+    color: rgba(255,255,255,.9);
 }
 
 section {
